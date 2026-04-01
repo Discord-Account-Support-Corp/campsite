@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "clean": "turbo run clean && rm -rf .turbo node_modules",
-    "dev": "turbo run dev --parallel",
+    "build": "pnpm -r --if-present run build",
+    "clean": "pnpm -r --if-present run clean && rm -rf .turbo node_modules",
+    "dev": "pnpm -r --parallel --if-present run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint -- --fix",
-    "test": "turbo run test"
+    "lint": "pnpm -r --if-present run lint",
+    "lint:fix": "pnpm -r --if-present run lint -- --fix",
+    "test": "pnpm -r --if-present run test"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "catalog:",
