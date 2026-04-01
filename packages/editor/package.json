@@ -16,5 +16,3 @@
   "devDependencies": {
     "@campsite/eslint-config": "workspace:*",
     "@campsite/tsconfig": "workspace:*"
-  }
-}
